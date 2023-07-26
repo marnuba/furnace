@@ -1120,7 +1120,7 @@ void FurnaceGUI::initSystemPresets() {
     }
   );
   ENTRY(
-    "Foenix F256K ", {
+    "Foenix F256K", {
       CH(DIV_SYSTEM_C64_6581, 1.0f, -1.0f, "clockSel=1"),
       CH(DIV_SYSTEM_C64_6581, 1.0f, 1.0f, "clockSel=1"),
       CH(DIV_SYSTEM_SMS, 1.0f, -1.0f, "chipType=1"),
@@ -1135,6 +1135,14 @@ void FurnaceGUI::initSystemPresets() {
       CH(DIV_SYSTEM_C64_6581, 1.0f, 1.0f, "clockSel=1"),
       CH(DIV_SYSTEM_SMS, 1.0f, -1.0f, "chipType=1"),
       CH(DIV_SYSTEM_SMS, 1.0f, -1.0f, "chipType=1")
+    },
+    "tickRate=60"
+  );
+  ENTRY(
+    "Foenix A2560U / C256U", {
+      CH(DIV_SYSTEM_C64_6581, 1.0f, 0, "clockSel=1"),
+      CH(DIV_SYSTEM_SMS, 1.0f, 0, "chipType=1"),
+      CH(DIV_SYSTEM_OPL3, 1.0f, 0, "")
     },
     "tickRate=60"
   );
